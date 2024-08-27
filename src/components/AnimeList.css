@@ -1,0 +1,105 @@
+/* src/components/AnimeList.css */
+
+.anime-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid rgb(3, 2, 14);
+}
+
+.anime-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 900px;
+    overflow-y: auto;
+}
+
+.anime-card {
+    position: relative;
+    align-items: flex-start; /* Ensures content is aligned to the top */
+    display: flex;
+    border: 1px solid rgb(18, 6, 21);
+    padding: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.anime-card img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.anime-info {
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    align-items: flex-start; /* Align all items to the left */
+  }
+  
+.anime-info h2, .anime-info h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.anime-info h3 {
+    font-size: 1em;
+}
+
+.anime-info p {
+    margin: 5px 0;
+    text-align: left; /* Ensures text in paragraphs is left-aligned */
+}
+
+.favorite-btn {
+    background-color: #4a4a4a;
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.favorite-btn.favorited {
+    background-color: #ff6f61;
+    color: #646464;
+}
+
+/* Remove hover effect for favorite button */
+.favorite-btn:hover {
+    background-color: #5d5d5d; /* Keep the same color as default */
+}
+
+/* Pagination container styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.page-btn {
+    background-color: #535353;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+/* Remove hover effect for pagination buttons */
+.page-btn:hover {
+    background-color: #3a3c3a; /* Keep the same color as default */
+}
+
+.page-number {
+    font-size: 16px;
+    margin: 0 10px;
+}

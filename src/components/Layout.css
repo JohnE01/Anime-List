@@ -1,0 +1,15 @@
+/* src/components/Layout.css */
+.layout {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 250px; /* Sidebar width */
+  }
+  
+  .content {
+    margin-left: 250px; /* Same as the sidebar width */
+    padding: 20px;
+    width: calc(100% - 250px); /* Take up the rest of the space */
+  }
+  

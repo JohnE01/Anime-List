@@ -1,0 +1,73 @@
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Space between left and right sections */
+  padding: 0px;
+  background-color: hwb(0 46% 54%); /* Background color */
+  border-bottom: 1px solid hsl(291, 21%, 82%); /* Bottom border */
+}
+
+.navbar-left {
+  display: flex;
+  font-family: 'Fairy Tail', sans-serif; /* Apply the Fairy Tail font */
+  font-weight: bold;
+  font-size: 30px;
+} 
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between links */
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+/* fire text */
+
+body {
+  background-color: #222; /* Dark background for contrast */
+}
+
+.fire-text {
+  color: #f5f5f5; /* Light text color */
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px; /* Adjust size as needed */
+  text-shadow: 
+    0 0 5px #fff, 
+    0 0 10px #ff3, 
+    0 0 15px #ff3, 
+    0 0 20px #f90, 
+    0 0 30px #f90, 
+    0 0 40px #c33;
+  animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+  0%, 100% {
+    text-shadow: 
+      0 0 5px #fff, 
+      0 0 10px #ff3, 
+      0 0 15px #ff3, 
+      0 0 20px #f90, 
+      0 0 30px #f90, 
+      0 0 40px #c33;
+  }
+  50% {
+    text-shadow: 
+      0 0 10px #fff, 
+      0 0 20px #ff3, 
+      0 0 30px #ff3, 
+      0 0 40px #f90, 
+      0 0 50px #f90, 
+      0 0 60px #c33;
+  }
+}

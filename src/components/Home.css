@@ -1,0 +1,55 @@
+/* In your CSS file */
+.home-container {
+  display: flex;
+}
+
+.home-content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Assuming Sidebar is styled separately */
+.sidebar {
+  width: 250px; /* Set your desired width */
+  background-color: #f4f4f4; /* Optional: Background color */
+}
+
+/* Fire text */
+
+.fire {
+  color: #000000; /* Black text color */
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px; /* Adjust size as needed */
+  font-weight: bold; /* Makes the text bold */
+  text-shadow: 
+    0 0 5px #000000, 
+    0 0 10px #ff3, 
+    0 0 15px #ff3, 
+    0 0 20px #f90, 
+    0 0 30px #f90, 
+    0 0 40px #c33;
+  animation: flicker 1.5s infinite alternate;
+}
+
+
+@keyframes flicker {
+  0%, 100% {
+    text-shadow: 
+      0 0 5px #fef2f2, 
+      0 0 10px #ff3, 
+      0 0 15px #ff3, 
+      0 0 20px #f90, 
+      0 0 30px #f90, 
+      0 0 40px #c33;
+  }
+  50% {
+    text-shadow: 
+      0 0 10px #fffbfb, 
+      0 0 20px #ff3, 
+      0 0 30px #ff3, 
+      0 0 40px #f90, 
+      0 0 50px #f90, 
+      0 0 60px #c33;
+  }
+}
